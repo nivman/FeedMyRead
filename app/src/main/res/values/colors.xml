@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#Bfd9e3</color>
+    <color name="colorPrimaryDark">#Bfd9e3</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="action_bar">#BA0000</color>
+    <color name="upperTab_bar">#D8DADA</color>
+    <color name="upperTab_bar_text">#3D4144</color>
+    <color name="upperTab_bar_underline">#00A69a</color>
+    <color name="deep_green">#005954</color>
+    <color name="footer_of_tags_header">#D8DADA</color>
+    <color name="tag_view_edit_text">#ffffff</color>
+    <color name="main_background_light_grey">#ededed</color>
+
+</resources>
+
+
+
+    <!--#00A69a-->

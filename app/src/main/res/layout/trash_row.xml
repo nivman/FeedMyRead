@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/site_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+    <com.daimajia.swipe.SwipeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Bottom View Start-->
+        <LinearLayout
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="40dp"
+            android:paddingStart="40dp"
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#bababa"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <!--What you want to show-->
+
+            <Button
+                android:layout_weight = "1"
+                android:layout_gravity="center"
+                android:textColor="@color/md_white_1000"
+                android:background="@drawable/rss_buttons"
+                android:id="@+id/trash_restore"
+                android:text="@string/trash_restore"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:contentDescription="@string/archive"
+                android:layout_gravity="center"
+                android:layout_weight = "2"
+                android:src="@drawable/grey_trash"
+                android:id="@+id/trash_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <!-- Bottom View End-->
+
+        <!-- Surface View Start -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+            <!--What you want to show in SurfaceView-->
+
+            <ImageView
+                android:contentDescription="@string/article_image"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@color/action_bar"
+                android:id="@+id/site_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+            <LinearLayout
+                android:id="@+id/ContextLinearlayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/site_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="90"
+                    android:text=""
+                    android:lines="2"
+                    android:textColor="#040404"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/site_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#3d4144"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Surface View End -->
+    </com.daimajia.swipe.SwipeLayout>
+
+
+</RelativeLayout>
+    <!--android:listSelector="@drawable/list_selector"-->

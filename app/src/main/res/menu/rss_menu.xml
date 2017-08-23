@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/restore_all"
+        android:orderInCategory="100"
+        android:title="@string/restore_all"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/delete_all"
+        android:orderInCategory="100"
+        android:title="@string/delete_all"
+        app:showAsAction="never"/>
+
+    <item
+        android:icon="@drawable/ic_menu_add"
+        android:id="@+id/save_rss_site"
+        android:orderInCategory="100"
+        android:title="@string/save_rss_site"
+        app:showAsAction="always" tools:ignore="AlwaysShowAction"/>
+    <item
+        android:icon="@drawable/ic_menu_share"
+        android:id="@+id/share_rss_site"
+        android:orderInCategory="100"
+        android:title="@string/share_rss_site"
+        app:showAsAction="always" tools:ignore="AlwaysShowAction"/>
+
+</menu>
+<!--icon recourse-->
+    <!--C:\Users\ed-it-art\AppData\Local\Android\sdk\platforms\android-21\data\res-->

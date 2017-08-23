@@ -1,0 +1,60 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="end"
+    tools:context="com.dqsoftwaresolutions.feedMyRead.WebSiteContentActivity">
+
+    <item
+
+        android:id="@+id/show_web_view"
+        android:icon="@drawable/ic_menu_moreoverflow_normal_holo_light"
+        android:orderInCategory="1"
+        android:title="@string/web_view"
+        app:showAsAction=""/>
+    <item
+
+        android:id="@+id/layout_control"
+        android:icon="@drawable/ic_menu_moreoverflow_normal_holo_light"
+        android:orderInCategory="1"
+        android:title="@string/change_setting"
+        app:showAsAction=""/>
+    <item
+        android:id="@+id/text_to_speech"
+        android:icon="@drawable/speaker"
+        android:orderInCategory="100"
+        android:title="@string/read_text"
+        app:showAsAction=""/>
+    <item
+
+        android:id="@+id/favorite_empty_star"
+        android:icon="@drawable/grey_star"
+        android:iconifiedByDefault="false"
+        android:title=""
+        app:showAsAction="always" tools:ignore="AlwaysShowAction"/>
+    <item
+
+        android:id="@+id/favorite_full_star"
+        android:icon="@drawable/star_dark_green"
+        android:iconifiedByDefault="false"
+        android:title=""
+        app:showAsAction="always" tools:ignore="AlwaysShowAction"/>
+    <item
+        android:id="@+id/tag_icon"
+        android:icon="@drawable/tag_dark_green"
+        android:iconifiedByDefault="false"
+        android:title=""
+        app:showAsAction="always" tools:ignore="AlwaysShowAction"/>
+    <item
+        android:id="@+id/trash_icon"
+        android:icon="@drawable/arcive_deep_green"
+        android:iconifiedByDefault="false"
+        android:title=""
+        app:showAsAction="always" tools:ignore="AlwaysShowAction"/>
+    <item
+        android:id="@+id/share_icon"
+        android:icon="@drawable/share_dark_green"
+        android:iconifiedByDefault="false"
+        android:title=""
+        app:showAsAction="always" tools:ignore="AlwaysShowAction"/>
+</menu>

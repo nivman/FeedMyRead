@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">FeedMyRead</string>
+    <string name="prompt_email">Your Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in">Sign in</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_url_not_found">Invalid URL! PHP file could not be found</string>
+    <string name="error_password_length">Password length must be at least 5 characters</string>
+    <string name="info_label">FeedMyRead</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_web_site_content">WebSiteContentActivity</string>
+    <string name="title_activity_create_tags">CreateTagsActivity</string>
+    <string name="button_tag_save">save</string>
+    <string name="tag_delete">deleted</string>
+    <string name="tag_undo">undo</string>
+
+    <string name="trash_restore">Restore</string>
+    <string name="restore_all">Restore all</string>
+    <string name="delete_all">delete all</string>
+    <string name="tags">Tags</string>
+    <string name="my_list">My List</string>
+    <string name="favorites">Favorites</string>
+    <string name="search">Search</string>
+    <string name="web_view">Web View</string>
+    <string name="change_setting">Change setting</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="title_activity_down_load_progress">DownLoadProgressActivity</string>
+
+    <string name="save_rss_article">Save</string>
+    <string name="share_this">Share this article</string>
+    <string name="share_rss_article">Share</string>
+    <string name="save_rss_site">Save Rss site</string>
+    <string name="share_rss_site">share rss site</string>
+    <string name="read_text">Read text</string>
+
+
+    <string name="volume">Volume</string>
+    <string name="speed">Speed</string>
+
+    <string name="archive">Archive</string>
+    <string name="statistics">Statistics</string>
+    <string name="log_out">Log Out</string>
+    <string name="create_tags">Create Tags</string>
+    <string name="write_your_tag_here">Write your tag here</string>
+    <string name="my_tags">My Tags</string>
+
+    <string name="FeedMyReadNoSpace">FeedMyRead</string>
+
+    <string name="number_of_saved_articles">Number of saved articles</string>
+    <string name="number_of_articles_in_archive">Number of Archive articles</string>
+    <string name="number_of_articles_tag_as_favorites">Number of favorites articles</string>
+    <string name="number_of_tags">Number of tags </string>
+    <string name="refresh">Refresh</string>
+    <string name="help">Help</string>
+    <string name="pause">Pause</string>
+    <string name="start">start</string>
+    <string name="resume">Resume</string>
+    <string name="about">About</string>
+    <string name="title_activity_about">About</string>
+    <string name="about_text">FeedMyRead is a “Read it later” service that let you save articles to
+        read when you have the time, with or without internet connection. You create an account,
+        save articles you want to read from any web browser, add tags for affective organization and
+        read them in a clean, uncluttered way that ditches most of the ads and focuses on the text.\n\nSome of the key features:\nText-to-speech option in multiple languages: English, German, Italian, French and Chinese.\n\nAccessibility mode – Options for customizing the font, colors, and text size.\n\nTagging system to organize articles.
+        \n\nInternal search Built in news feed
+    </string>
+    <string name="about_feedmyread">About FeedMyRead</string>
+    <string name="forgot_my_password">Forgot my password</string>
+    <string name="my_statistics">My Statistics</string>
+    <string name="content_description_splash_screen_img">splash screen img</string>
+
+    <string name="content_description_my302">content description my302</string>
+    <string name="content_description_my_list">content description my list</string>
+    <string name="content_description_menus_icon">content description menus icon</string>
+    <string name="content_description_logo_books">content description logo books</string>
+    <string name="content_description_archive">content description archive</string>
+    <string name="content_description_favorites">content description favorites</string>
+    <string name="log_out_image">log out image</string>
+    <string name="tags_image">tags image</string>
+    <string name="logo_books_image">logo books image</string>
+    <string name="empty_favorite_star_image">empty favorite star image</string>
+    <string name="share_image">share image</string>
+    <string name="trash_image">trash image</string>
+    <string name="site_image">site image</string>
+    <string name="favorite_image">favorite image</string>
+    <string name="statistics_image">statistics image</string>
+    <string name="feed">Feed</string>
+    <string name="aa">Aa</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="edit_tag">Edit tag</string>
+    <string name="article_image">article image</string>
+    <string name="edit_image">edit image</string>
+
+</resources>

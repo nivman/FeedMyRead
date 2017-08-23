@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dqsoftwaresolutions.feedMyRead.WebSiteContentActivity"
+    tools:showIn="@layout/activity_web_site_content" tools:ignore="Overdraw">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" tools:ignore="ScrollViewSize">
+            <WebView
+                android:id="@+id/web_view_original"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/md_amber_50"
+                android:visibility="gone"/>
+            <TextView
+                android:textColor="@color/hockeyapp_text_black"
+                android:padding="5dp"
+                android:id="@+id/site_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:gravity="center"
+                android:text=""
+
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                 android:background="@color/md_white_1000"
+                android:padding="5dp"
+                android:visibility="visible">
+
+            </WebView>
+        </LinearLayout>
+    </ScrollView>
+    <!--android:visibility="invisible"-->
+    <LinearLayout
+        android:id="@+id/setting_panel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/decrease_font_size"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pause_button"
+                android:text="@string/minus"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/text_sign"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/decrease_font_size"
+                android:layout_toRightOf="@+id/decrease_font_size"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/aa"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/increase_font_size"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/text_sign"
+                android:layout_toRightOf="@+id/text_sign"
+                android:background="@drawable/pause_button"
+                android:text="@string/plus"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/increase_font_size"
+                android:layout_toRightOf="@+id/increase_font_size"
+                android:background="@drawable/pause_button"
+                android:text="@string/light"
+                android:textColor="@color/deep_green"
+                android:textSize="12sp"/>
+            <Button
+                android:id="@+id/dark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/light"
+                android:layout_toRightOf="@+id/light"
+                android:background="@drawable/rss_buttons"
+                android:text="@string/dark"
+                android:textColor="@color/md_white_1000"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+        <SeekBar
+            android:id="@+id/seek_bar_font"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="19dp"
+            android:max="3"
+            android:progressDrawable="@drawable/seek_bar_progress"
+            android:thumb="@drawable/seek_bar">
+
+        </SeekBar>
+        <SeekBar
+            android:id="@+id/seek_bar_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="25dp"
+            android:max="10"
+            android:progress="0"
+            android:progressDrawable="@drawable/seek_bar_progress"
+            android:thumb="@drawable/seek_bar"/>
+    </LinearLayout>
+    <!--android:visibility="invisible"-->
+    <LinearLayout
+        android:id="@+id/read_setting_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <LinearLayout
+            android:baselineAligned="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/pauseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/pause_button"
+                    android:onClick="onPauseSpeech"
+                    android:text="@string/pause"
+
+                    android:textColor="@color/deep_green" tools:ignore="ButtonStyle"/>
+                <Button
+                    android:id="@+id/resumeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pause_button"
+                    android:onClick="onResumeSpeech"
+                    android:text="@string/resume"
+                    android:textColor="@color/deep_green" tools:ignore="ButtonStyle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <Button
+
+                    android:id="@+id/ttsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rss_buttons"
+                    android:onClick="onStartSpeech"
+                    android:text="@string/start"
+                    android:textColor="@color/md_white_1000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/set_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/volume"
+            android:textColor="@color/deep_green"
+            android:textSize="13sp"/>
+        <SeekBar
+            android:id="@+id/volume_slider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:max="19"
+            android:progress="9"
+            android:progressDrawable="@drawable/seek_bar_progress"
+            android:thumb="@drawable/seek_bar"/>
+        <TextView
+            android:id="@+id/set_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="@string/speed"
+            android:textColor="@color/deep_green"
+            android:textSize="13sp"/>
+        <SeekBar
+            android:id="@+id/speedslider"
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:max="19"
+            android:progress="9"
+            android:progressDrawable="@drawable/seek_bar_progress"
+            android:thumb="@drawable/seek_bar"/>
+        <Spinner
+
+            android:id="@+id/langSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pause_button"
+            android:spinnerMode="dialog"/>
+    </LinearLayout>
+
+</RelativeLayout>
+

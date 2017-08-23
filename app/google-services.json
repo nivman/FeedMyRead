@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_number": "958272573613",
+    "project_id": "feedmyread-162108"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958272573613:android:ebf6da52aabe1a18",
+        "android_client_info": {
+          "package_name": "com.dqsoftwaresolutions.feedMyRead"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958272573613-aovu18hcpqj69h5v00dthbtp4431t6nq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "958272573613-n5qsshp11jhsvff1r2mfhjhvdlrrl56s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dqsoftwaresolutions.feedMyRead",
+            "certificate_hash": "9bf4c55afb162a137cd075cd8a49727a3d0c09e7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtOgEuSc18Go5vnwrKCDC7zmSOF0RorPQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-92599244-2"
+
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

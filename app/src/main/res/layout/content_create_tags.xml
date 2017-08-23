@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dqsoftwaresolutions.feedMyRead.CreateTagsActivity"
+    tools:showIn="@layout/activity_create_tags">
+
+
+    <ListView
+        android:focusable="false"
+        android:descendantFocusability="afterDescendants"
+        android:smoothScrollbar="true"
+        android:layout_gravity="center"
+        android:divider="@color/upperTab_bar"
+        android:dividerHeight="2dp"
+        android:transcriptMode="normal"
+        android:id="@+id/create_tags_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

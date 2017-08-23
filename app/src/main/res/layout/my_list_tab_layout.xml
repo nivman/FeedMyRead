@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" tools:ignore="UseCompoundDrawables">
+
+
+    <ImageView
+        android:contentDescription="@string/content_description_my_list"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/my302"
+        android:layout_width="30dp"
+        android:layout_height="32dp"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/upperTab_bar_text"
+        android:layout_gravity="center_vertical"
+        android:text="@string/my_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

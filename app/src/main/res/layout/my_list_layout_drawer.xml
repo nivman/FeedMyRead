@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:contentDescription="@string/content_description_my302"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:src="@drawable/my302"/>
+    <TextView
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_list"
+        android:textSize="20sp"
+        android:textColor="#dddfdf"/>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"/>
+
+</LinearLayout>

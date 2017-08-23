@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+          package="com.dqsoftwaresolutions.feedMyRead">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <permission android:name="com.dqsoftwaresolutions.feedMyRead.database.provider.READWRITE"/>
+
+    <uses-permission android:name="com.dqsoftwaresolutions.feedMyRead.database.provider.READWRITE"/>
+    <!--android:icon="@mipmap/ic_launcher"-->
+
+    <application
+
+        android:name="com.dqsoftwaresolutions.feedMyRead.FeedMyRead"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.LoginRegisterActivity"
+            android:label="@string/app_name"
+            android:noHistory="true">
+        </activity>
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.MainActivity"
+            android:label="@string/info_label"
+            android:noHistory="true">
+        </activity>
+
+        <provider
+            android:name="com.dqsoftwaresolutions.feedMyRead.database.AppProvider"
+            android:authorities="com.dqsoftwaresolutions.feedMyRead.database.provider"
+            android:exported="false"
+            android:readPermission="com.dqsoftwaresolutions.feedMyRead.database.provider.READWRITE"
+            android:writePermission="com.dqsoftwaresolutions.feedMyRead.database.provider.READWRITE"/>
+
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.MainListActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.WebSiteContentActivity"
+            android:label="@string/title_activity_web_site_content"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.ShareData"
+            android:theme="@style/AppTheme.myDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.CreateTagsActivity"
+            android:label="@string/title_activity_create_tags"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.DownLoadProgressActivity"
+            android:label="@string/title_activity_down_load_progress"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.RssWebSiteContent"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <service
+            android:name="com.dqsoftwaresolutions.feedMyRead.webservices.UpdateDataBaseBackGroundService"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="377f29dea90e4d6f9a9e6af5f2ae9e5c"/>
+
+        <activity
+            android:name="com.dqsoftwaresolutions.feedMyRead.About"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

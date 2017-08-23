@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:orientation="vertical"
+             android:id="@+id/rss_list_container"
+             tools:context="com.dqsoftwaresolutions.feedMyRead.RssTabFragment">
+
+    <ProgressBar
+        android:id="@+id/rss_progress_bar"
+        android:layout_gravity="center"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ListView
+
+        android:dividerHeight="2dp"
+        android:divider="@color/btn_unpress_color"
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:textColorLink="@color/upperTab_bar_text"
+        android:autoLink="web"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="@color/md_white_1000"
+        android:id="@+id/news_api_link"
+        android:textColor="@color/md_black_1000"
+        android:text="powered by NewsAPI.org"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:layout_width="3600dp"
+        android:layout_height="30dp"/>
+</FrameLayout>
+
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android" >-->
+<!--<item-->
+    <!--android:id="@+id/menu_refresh"-->
+    <!--android:showAsAction="never"-->
+    <!--android:title="@string/menu_refresh"/>-->
+<!--</menu>-->

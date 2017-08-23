@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/main_list"
+        android:layout_height="190dp"
+        android:title=""
+        app:actionLayout="@layout/my_list_layout_drawer"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/tags_list"
+        android:title=""
+        app:actionLayout="@layout/tag_list_layout_drawer"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/favorites_list"
+        android:title=""
+        app:actionLayout="@layout/favorites_layout_drawer"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/archive_list"
+        android:title=""
+        app:actionLayout="@layout/archive_layout_drawer"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/statistics"
+        android:title=""
+        app:actionLayout="@layout/statistics_layout_drawer"
+        app:showAsAction="never"/>
+<!--<group-->
+    <!--android:checkableBehavior="single"-->
+    <!--android:menuCategory="container">-->
+    <!--<item-->
+
+        <!--app:actionLayout="@layout/logout_layout_drawer"-->
+        <!--app:showAsAction="never"-->
+        <!--android:id="@+id/nav_logout"-->
+        <!--android:title=""/>-->
+
+<!--</group>-->
+
+</menu>

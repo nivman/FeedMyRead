@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"/>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#3D4144"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main_list"
+        app:menu="@menu/activity_main_list_drawer">
+
+
+        <LinearLayout
+            android:id="@+id/nav_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:contentDescription="@string/log_out"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4sp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:src="@drawable/log_out"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4sp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:text="@string/log_out"
+                android:textColor="#dddfdf"
+                android:textSize="20sp">
+
+
+
+            </TextView>
+        </LinearLayout>
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

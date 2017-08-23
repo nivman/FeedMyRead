@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lyt_container"
+    android:background="@android:color/white"
+   >
+<RelativeLayout
+
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:height="@dimen/list_item_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/list_item_padding_sides"
+        android:paddingRight="@dimen/list_item_padding_sides"
+        android:id="@+id/tag_name"
+        android:background="@android:color/white"/>
+    <ImageView
+        android:contentDescription="@string/edit_image"
+        android:background="@android:color/white"
+        android:layout_centerVertical="true"
+       android:layout_toRightOf="@id/tag_name"
+        android:layout_toEndOf="@id/tag_name"
+        android:layout_gravity="end|center_vertical"
+        android:src="@drawable/edit"
+        android:id="@+id/tag_edit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <ImageView
+        android:contentDescription="@string/archive"
+        android:background="@android:color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/tag_edit"
+        android:layout_toEndOf="@id/tag_edit"
+        android:layout_centerVertical="true"
+        android:layout_gravity="end|center_vertical"
+        android:src="@drawable/archive"
+        android:id="@+id/tag_trash"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2"
+        android:id="@+id/tag_name_linear_layout"
+        android:height="@dimen/list_item_height">
+
+        <TextView
+            android:background="@color/deep_green"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_delete"
+            android:gravity="center"
+            android:text="@string/tag_delete"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+        android:background="@color/md_white_1000"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/txt_undo"
+            android:text="@string/tag_undo"
+            android:clickable="false"
+
+            android:textColor="@color/deep_green"/>
+
+    </LinearLayout>
+
+</FrameLayout>
